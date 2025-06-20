@@ -1,0 +1,16 @@
+#mkdocs.yml
+site_name: Documentación VsCode + MkDocs
+theme:
+  name: material
+  language: es
+  palette:
+    primary: indigo
+    accent: blue
+  logo: images/logo.png
+extra:
+  favicon: images/favicon.png
+
+nav:
+  - 0. Inicio: index.md
+  - 1. Visual Studio Code: guia-vscode.md
+  - 2. MkDocs: guia-mkdocs.md
