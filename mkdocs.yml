@@ -6,9 +6,10 @@ theme:
   palette:
     primary: indigo
     accent: blue
-  logo: images/logo.png
+  
 extra:
-  favicon: images/favicon.png
+  logo: images/logo.png
+  favicon: images/logo.png
 
 nav:
   - 0. Inicio: index.md
