@@ -1,5 +1,6 @@
 #mkdocs.yml
 site_name: Documentación VsCode + MkDocs
+site_url: https://javidocenteinformatica.github.io/vscode_mkdocs/
 repo_url: https://github.com/javiDocenteInformatica/vscode_mkdocs
 theme:
   name: material

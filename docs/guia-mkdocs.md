@@ -309,7 +309,7 @@ theme:
 
 Colores disponibles: `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`.
 
-![mkdocs-material-primary-colors](/assets/images/mkdocs-material-primary-colors.png)
+![mkdocs-material-primary-colors](assets/images/mkdocs-material-primary-colors.png)
 
 
 > 📝 Referencia de colores disponibles:  
@@ -422,8 +422,136 @@ nav:
 
 La **estructura completa del proyecto** actualmente se verá como sigue:
 
-![Estructura del proyecto](/assets/images/estructura_proyecto.png)  
+![Estructura del proyecto](assets/images/estructura_proyecto.png)  
 
 ## 🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
 
-🧷 [https://www.mkdocs.org/user-guide/cli/#mkdocs](https://www.mkdocs.org/user-guide/cli/#mkdocs)
+🧷 *Repositorio publicado:*  
+<https://javidocenteinformatica.github.io/vscode_mkdocs/>
+
+🧷 *Enlace CLI oficial de MkDocs:*  
+<https://www.mkdocs.org/user-guide/cli/#mkdocs>
+
+### Introducción
+
+Una vez tenemos nuestra documentación local generada con MkDocs y funcionando correctamente, el siguiente paso natural es hacerla pública para que cualquiera pueda consultarla desde cualquier navegador.  
+Para ello, utilizaremos **GitHub Pages**, un servicio gratuito que nos permite servir contenido estático directamente desde un repositorio de GitHub.
+
+---
+
+### 10.1 Requisitos previos
+
+Antes de continuar, asegúrate de haber cumplido los siguientes puntos:
+
+- Tienes una cuenta en GitHub y un repositorio creado con el código fuente de tu proyecto MkDocs.
+
+- Has configurado correctamente tu fichero `mkdocs.yml`.
+
+- Has instalado y activado un entorno virtual con MkDocs y ejecutado con éxito `mkdocs build`.
+
+También se recomienda añadir al final del fichero `mkdocs.yml` el campo `site_url` con la URL pública de la documentación:
+
+```yaml
+site_url: https://javidocenteinformatica.github.io/vscode_mkdocs/
+```
+
+Esto ayuda a MkDocs a generar correctamente los enlaces internos (por ejemplo, en el índice o los breadcrumbs), especialmente si usamos plugins o generamos sitemaps.
+
+---
+
+### 10.2 Publicar la documentación en GitHub Pages
+
+Para publicar la documentación, simplemente debemos ejecutar el siguiente comando:
+
+```bash
+mkdocs gh-deploy
+```
+
+Este comando realiza automáticamente las siguientes acciones:  
+
+1. Limpia la carpeta `site/`.
+
+2. Genera el contenido actualizado de la documentación.
+
+3. Crea (o actualiza) la rama `gh-pages` en tu repositorio.
+
+4. Sube el contenido a esa rama y configura GitHub Pages para servirlo desde ahí.
+
+Si todo va bien, verás un mensaje como este:
+
+```bash
+INFO    -  Your documentation should shortly be available at: https://<usuario>.github.io/<repositorio>/
+```
+
+---
+
+### 10.3 Activar GitHub Pages desde la configuración del repositorio
+
+Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la interfaz web de GitHub. Vamos a ver cómo se hace paso a paso.
+
+#### Paso 1: Accedemos a la pestaña **Settings** del repositorio
+
+📷  
+![Paso 1: Settings > Pages](assets\images\activando_github_pages_1.png)
+
+---
+
+#### Paso 2: En el menú lateral, entramos en la opción **Pages**
+
+📷  
+![Paso 2: Menú lateral Pages](assets\images\activando_github_pages_2.png)
+
+---
+
+#### Paso 3: Elegimos la rama `gh-pages` y la carpeta `/ (root)` como fuente
+
+📷  
+![Paso 3: Selección de rama y carpeta](assets\images\activando_github_pages_3.png)
+
+---
+
+#### Paso 4: Hacemos clic en **Save** para aplicar los cambios  
+
+📷  
+![Paso 4: Guardar configuración](assets\images\activando_github_pages_4.png)
+
+---
+
+### 10.4 Hacer el repositorio público
+
+GitHub Pages **no funciona en repositorios privados** a menos que tengamos una cuenta GitHub Pro. Por tanto, si tu repositorio es privado, deberás cambiar su visibilidad a público.
+
+#### Paso 5: Entra en la sección **General** > baja hasta la **Danger Zone**
+
+📷  
+![Paso 5: Danger Zone](assets\images\activando_github_pages_5.png)
+
+---
+
+#### Paso 6: Haz clic en **Change visibility** y selecciona **Change to public**
+
+📷  
+![Paso 6: Confirmar cambio de visibilidad](assets\images\activando_github_pages_6.png)
+
+---
+
+#### Paso 7: Confirma los efectos y escribe el nombre del repositorio para validar
+
+📷  
+![Paso 7: Confirmación final](assets\images\activando_github_pages_7.png)
+
+---
+
+### 10.5 Acceder a la página pública
+
+Después de guardar todos los cambios y esperar unos segundos, podrás acceder a tu documentación en la siguiente URL:
+
+```bash
+https://<usuario>.github.io/<repositorio>/
+```
+
+En nuestro caso:
+
+👉 <https://javidocenteinformatica.github.io/vscode_mkdocs/>
+
+---

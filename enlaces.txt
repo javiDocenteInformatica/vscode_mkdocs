@@ -1,3 +1,5 @@
+** Github Pages - Documentación VsCode + MkDocs. (s. f.). Github.io. Recuperado 21 de junio de 2025, de https://javidocenteinformatica.github.io/vscode_mkdocs/
+
 - de Souza, R. X. (s. f.). Complete list of github markdown emoji markup. Recuperado 21 de junio de 2025, de https://gist.github.com/rxaviers/7360908
 
 - Paste to Markdown. (s. f.). Github.io. Recuperado 21 de junio de 2025, de https://euangoddard.github.io/clipboard2markdown/
