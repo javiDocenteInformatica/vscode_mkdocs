@@ -1,0 +1,16 @@
+# VSCode
+.vscode/
+
+# Entorno virtual de Python
+venv/
+
+# Archivos de cache
+__pycache__/
+*.pyc
+
+# MkDocs
+site/
+
+# Archivos temporales
+*.log
+.DS_Store
