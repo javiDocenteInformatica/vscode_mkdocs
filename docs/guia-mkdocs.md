@@ -332,47 +332,66 @@ theme:
 
 ### 🖼️ Logo y favicon: ¿en qué se diferencian?
 
-Antes de personalizarlos, conviene saber qué función tiene cada uno:
+Antes de configurarlos, conviene saber qué función tiene cada uno:
 
 - **Favicon**: es el pequeño icono que aparece en la pestaña del navegador, en los marcadores o cuando se guarda el sitio como acceso directo.
 
 - **Logo**: es la imagen que aparece en la barra de navegación del sitio, junto al título. Suele ser más grande y representativo.
 
-Ambos archivos deben colocarse dentro de la carpeta `docs/` (por ejemplo, en `docs/images/`) y referenciarse desde el archivo `mkdocs.yml`.
+Ambos elementos se configuran dentro del bloque `theme:` en el archivo `mkdocs.yml`, y deben estar ubicados **dentro de la carpeta `docs/`**, preferiblemente organizados en una subcarpeta `assets/images/`.
 
 ---
 
-### 📁 Favicon (icono del navegador)
+### 📁 Estructura recomendada del proyecto
 
-Si queremos personalizar el favicon (el ícono que aparece en la pestaña del navegador), colocamos un archivo `.png` o `.ico` en la carpeta `docs/` y lo referenciamos en `mkdocs.yml`:
-
-```yaml
-extra:
-  favicon: images/favicon.png
-```
-
-Y aseguramos que el archivo exista, por ejemplo:
-
-```pgslq
+```pgsql
 docs/
 ├── index.md
-├── images/
-│   └── favicon.png
+├── guia-vscode.md
+├── guia-mkdocs.md
+├── assets/
+│   └── images/
+│       ├── logo.svg         ✅ Logo (preferentemente en formato SVG)
+│       └── favicon.png      ✅ Favicon (formato PNG de 32x32 o similar)
 ```
 
 ---
 
-### 🖼️ Logo del sitio
-
-También podemos personalizar el logo que aparece en la barra de navegación:
+### ⚙️ Configuración correcta en `mkdocs.yml`
 
 ```yaml
 theme:
   name: material
-  logo: images/logo.png
-
-Debe estar ubicado también dentro de `docs/`.
+  language: es
+  palette:
+    primary: indigo
+    accent: blue
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
 ```
+
+> ✅ Ambos deben definirse dentro de la sección `theme:`.  
+> ⚠️ Ya no se debe utilizar `extra.favicon`, ya que es una práctica obsoleta y no compatible con las últimas versiones del tema Material.
+
+---
+
+### 📝 Recomendaciones importantes
+
+- El **logo** puede estar en formato `.svg` o `.png`. Se recomienda **`.svg`** por su nitidez y escalabilidad.
+
+- El **favicon** debe estar en formato `.png` o `.ico`, preferentemente en resolución **32x32 px**.
+
+- Asegurarse de que los archivos existen y están correctamente nombrados (sin espacios ni mayúsculas).
+
+- Después de cualquier cambio, **reiniciamos el servidor** con `Ctrl + C` y luego `mkdocs serve`.
+
+- Si el favicon no se actualiza, **forzamos la recarga en el navegador** con `Ctrl + Shift + R` o abrimos en modo incógnito.
+
+---
+
+### 📚 Enlace a la documentación oficial
+
+👉 <https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/>
 
 ---
 
@@ -381,18 +400,24 @@ Debe estar ubicado también dentro de `docs/`.
 ```yaml
 #mkdocs.yml
 site_name: Documentación VsCode + MkDocs
+repo_url: https://github.com/javiDocenteInformatica/vscode_mkdocs
 theme:
   name: material
   language: es
   palette:
     primary: indigo
     accent: blue
-  logo: images/logo.png
-extra:
-  favicon: images/favicon.png
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
 
 nav:
   - 0. Inicio: index.md
   - 1. Visual Studio Code: guia-vscode.md
   - 2. MkDocs: guia-mkdocs.md
 ```
+
+<!-- ![Estructura del proyecto](/assets/images/estructura_proyecto.png) -->
+<figure>
+    <img src="/assets/images/estructura_proyecto.png" alt="Estructura del proyecto"/>
+    <figcaption>Estructura del proyecto</figcaption>
+</figure>
