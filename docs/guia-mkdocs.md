@@ -492,28 +492,28 @@ Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la
 #### Paso 1: Accedemos a la pestaña **Settings** del repositorio
 
 📷  
-![Paso 1: Settings > Pages](assets\images\activando_github_pages_1.png)
+![Paso 1: Settings > Pages](assets\github_pages\activando_github_pages_1.png)
 
 ---
 
 #### Paso 2: En el menú lateral, entramos en la opción **Pages**
 
 📷  
-![Paso 2: Menú lateral Pages](assets\images\activando_github_pages_2.png)
+![Paso 2: Menú lateral Pages](assets\github_pages\activando_github_pages_2.png)
 
 ---
 
 #### Paso 3: Elegimos la rama `gh-pages` y la carpeta `/ (root)` como fuente
 
 📷  
-![Paso 3: Selección de rama y carpeta](assets\images\activando_github_pages_3.png)
+![Paso 3: Selección de rama y carpeta](assets\github_pages\activando_github_pages_3.png)
 
 ---
 
 #### Paso 4: Hacemos clic en **Save** para aplicar los cambios  
 
 📷  
-![Paso 4: Guardar configuración](assets\images\activando_github_pages_4.png)
+![Paso 4: Guardar configuración](assets\github_pages\activando_github_pages_4.png)
 
 ---
 
@@ -524,21 +524,21 @@ GitHub Pages **no funciona en repositorios privados** a menos que tengamos una c
 #### Paso 5: Entra en la sección **General** > baja hasta la **Danger Zone**
 
 📷  
-![Paso 5: Danger Zone](assets\images\activando_github_pages_5.png)
+![Paso 5: Danger Zone](assets\github_pages\activando_github_pages_5.png)
 
 ---
 
 #### Paso 6: Haz clic en **Change visibility** y selecciona **Change to public**
 
 📷  
-![Paso 6: Confirmar cambio de visibilidad](assets\images\activando_github_pages_6.png)
+![Paso 6: Confirmar cambio de visibilidad](assets\github_pages\activando_github_pages_6.png)
 
 ---
 
 #### Paso 7: Confirma los efectos y escribe el nombre del repositorio para validar
 
 📷  
-![Paso 7: Confirmación final](assets\images\activando_github_pages_7.png)
+![Paso 7: Confirmación final](assets\github_pages\activando_github_pages_7.png)
 
 ---
 
