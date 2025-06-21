@@ -8,5 +8,5 @@
 
 - MkDocs Team. (s. f.). Command Line Interface - MkDocs. Mkdocs.org. Recuperado 21 de junio de 2025, de https://www.mkdocs.org/user-guide/cli/#mkdocs
 
-
+- Galos, M. (s. f.). mkdocs-breadcrumbs-plugin: Location-based breadcrumbs navigation. Recuperado 21 de junio de 2025, de https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
 

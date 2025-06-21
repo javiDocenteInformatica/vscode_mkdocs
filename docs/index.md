@@ -4,5 +4,5 @@ Este sitio ha sido generado con [MkDocs](https://www.mkdocs.org) y está diseña
 
 ## Contenido
 
-- [Instalación de Visual Studio Code y extensiones](guia-vscode.md)
-- [Guía básica de MkDocs](guia-mkdocs.md)
+- [Instalación de Visual Studio Code y extensiones](vs_code/guia-vscode.md)
+- [Guía básica de MkDocs](mkdocs/guia-mkdocs.md)
