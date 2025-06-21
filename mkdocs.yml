@@ -11,6 +11,13 @@ theme:
   logo: assets/images/logo.png
   favicon: assets/images/favicon.ico
 
+## Sólo funciona si eres insider. Esto te permitiría abrir enlaces en una nueva pestaña.
+# plugins:
+#   - privacy:
+#       links_attr_map:
+#         target: _blank
+#         rel: noopener noreferrer
+
 nav:
   - 0. Inicio: index.md
   - 1. Visual Studio Code: guia-vscode.md

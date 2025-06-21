@@ -25,8 +25,8 @@ o
 python3 --version
 ```
 
-Si no lo tenemos, podemos descargarlo desde la página oficial:\
-👉 [https://www.python.org/downloads](https://www.python.org/downloads/)
+Si no lo tenemos, podemos descargarlo desde la página oficial:  
+👉 <a href="https://www.python.org/downloads" target="_blank" rel="noopener">https://www.python.org/downloads</a>
 
 > Durante la instalación, es importante **activar la opción**:  
 > ✅ "Add Python to PATH"
@@ -131,7 +131,7 @@ mkdocs serve
 ```
 
 Esto abrirá un sitio web local en:  
-👉 [http://127.0.0.1:8000](http://127.0.0.1:8000/)
+👉 <a href="http://127.0.0.1:8000" target="_blank" rel="noopener">http://127.0.0.1:8000</a>
 
 A medida que editemos los archivos Markdown, los cambios se reflejarán automáticamente en el navegador.
 
@@ -277,7 +277,7 @@ Una vez guardado el archivo `mkdocs.yml`, volvemos a ejecutar:
 mkdocs serve
 ```
 
-Y actualizamos el navegador en [http://127.0.0.1:8000](http://127.0.0.1:8000/) para ver el nuevo menú y título aplicados.
+Y actualizamos el navegador en <a href="http://127.0.0.1:8000/" target="_blank" rel="noopener">http://127.0.0.1:8000</a> para ver el nuevo menú y título aplicados.
 
 ---
 
@@ -289,8 +289,8 @@ MkDocs permite personalizar el diseño de nuestro sitio si estamos utilizando el
 Podemos modificar los **colores**, el **favicon**, el **logo**, el **idioma** y más elementos visuales para adaptarlo a nuestras necesidades.
 
 > 📚 Documentación oficial del tema Material:  
-> 👉 [https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
-)
+> 👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/</a>
+
 ---
 
 ### 🎨 Colores primario y de acento
@@ -309,11 +309,13 @@ theme:
 
 Colores disponibles: `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`.
 
-![mkdocs-material-primary-colors](assets/images/mkdocs-material-primary-colors.png)
-
+<!-- ![mkdocs-material-primary-colors](assets/images/mkdocs-material-primary-colors.png) -->
+<a href="../assets/images/mkdocs-material-primary-colors.png" target="_blank">
+  <img src="../assets/images/mkdocs-material-primary-colors.png" alt="mkdocs-material-primary-colors">
+</a>
 
 > 📝 Referencia de colores disponibles:  
-> 👉 [https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors)
+> 👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors</a>
 
 ---
 
@@ -328,7 +330,7 @@ theme:
 ```
 
 > 🌍 Lista de idiomas disponibles:  
-> 👉 [https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
+> 👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/</a>
 
 ---
 
@@ -393,7 +395,7 @@ theme:
 
 ### 📚 Enlace a la documentación oficial
 
-👉 <https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/>
+👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/</a>
 
 ---
 
@@ -422,15 +424,22 @@ nav:
 
 La **estructura completa del proyecto** actualmente se verá como sigue:
 
-![Estructura del proyecto](assets/images/estructura_proyecto.png)  
+<!-- ![Estructura del proyecto](assets/images/estructura_proyecto.png)   -->
+<a href="../assets/images/estructura_proyecto.png" target="_blank">
+  <img src="../assets/images/estructura_proyecto.png" alt="Estructura del proyecto">
+</a>
 
 ## 🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
 
 🧷 *Repositorio publicado:*  
-<https://javidocenteinformatica.github.io/vscode_mkdocs/>
+<a href="https://javidocenteinformatica.github.io/vscode_mkdocs/" target="_blank" rel="noopener">
+https://javidocenteinformatica.github.io/vscode_mkdocs/
+</a>
 
 🧷 *Enlace CLI oficial de MkDocs:*  
-<https://www.mkdocs.org/user-guide/cli/#mkdocs>
+<a href="https://www.mkdocs.org/user-guide/cli/#mkdocs" target="_blank" rel="noopener">
+https://www.mkdocs.org/user-guide/cli/#mkdocs
+</a>
 
 ### Introducción
 
@@ -492,28 +501,40 @@ Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la
 #### Paso 1: Accedemos a la pestaña **Settings** del repositorio
 
 📷  
-![Paso 1: Settings > Pages](assets\github_pages\activando_github_pages_1.png)
+<!-- ![Paso 1: Settings > Pages](assets\github_pages\activando_github_pages_1.png) -->
+<a href="../assets/github_pages/activando_github_pages_1.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_1.png" alt="Paso 1: Settings > Pages">
+</a>
 
 ---
 
 #### Paso 2: En el menú lateral, entramos en la opción **Pages**
 
 📷  
-![Paso 2: Menú lateral Pages](assets\github_pages\activando_github_pages_2.png)
+<!-- ![Paso 2: Menú lateral Pages](assets\github_pages\activando_github_pages_2.png) -->
+<a href="../assets/github_pages/activando_github_pages_2.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_2.png" alt="Paso 2: Menú lateral Pages">
+</a>
 
 ---
 
 #### Paso 3: Elegimos la rama `gh-pages` y la carpeta `/ (root)` como fuente
 
 📷  
-![Paso 3: Selección de rama y carpeta](assets\github_pages\activando_github_pages_3.png)
+<!-- ![Paso 3: Selección de rama y carpeta](assets\github_pages\activando_github_pages_3.png) -->
+<a href="../assets/github_pages/activando_github_pages_3.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_3.png" alt="Paso 3: Selección de rama y carpeta">
+</a>
 
 ---
 
 #### Paso 4: Hacemos clic en **Save** para aplicar los cambios  
 
 📷  
-![Paso 4: Guardar configuración](assets\github_pages\activando_github_pages_4.png)
+<!-- ![Paso 4: Guardar configuración](assets\github_pages\activando_github_pages_4.png) -->
+<a href="../assets/github_pages/activando_github_pages_4.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_4.png" alt="Paso 4: Guardar configuración">
+</a>
 
 ---
 
@@ -524,21 +545,31 @@ GitHub Pages **no funciona en repositorios privados** a menos que tengamos una c
 #### Paso 5: Entra en la sección **General** > baja hasta la **Danger Zone**
 
 📷  
-![Paso 5: Danger Zone](assets\github_pages\activando_github_pages_5.png)
+<!-- ![Paso 5: Danger Zone](assets\github_pages\activando_github_pages_5.png) -->
+<a href="../assets/github_pages/activando_github_pages_5.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_5.png" alt="Paso 5: Danger Zone">
+</a>
 
 ---
 
 #### Paso 6: Haz clic en **Change visibility** y selecciona **Change to public**
 
 📷  
-![Paso 6: Confirmar cambio de visibilidad](assets\github_pages\activando_github_pages_6.png)
+<!-- ![Paso 6: Confirmar cambio de visibilidad](assets\github_pages\activando_github_pages_6.png) -->
+<a href="../assets/github_pages/activando_github_pages_6.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_6.png" alt="Paso 6: Confirmar cambio de visibilidad">
+</a>
 
 ---
 
 #### Paso 7: Confirma los efectos y escribe el nombre del repositorio para validar
 
 📷  
-![Paso 7: Confirmación final](assets\github_pages\activando_github_pages_7.png)
+<!-- ![Paso 7: Confirmación final](assets\github_pages\activando_github_pages_7.png) -->
+<a href="../assets/github_pages/activando_github_pages_7.png" target="_blank">
+  <img src="../assets/github_pages/activando_github_pages_7.png" alt="Paso 7: Confirmación final">
+</a>
+<!-- [![Paso 7: Confirmación final](assets/github_pages/activando_github_pages_7.png)](assets/github_pages/activando_github_pages_7.png){ target="_blank" } -->
 
 ---
 
@@ -552,6 +583,8 @@ https://<usuario>.github.io/<repositorio>/
 
 En nuestro caso:
 
-👉 <https://javidocenteinformatica.github.io/vscode_mkdocs/>
+👉 <a href="https://javidocenteinformatica.github.io/vscode_mkdocs/" target="_blank" rel="noopener">
+https://javidocenteinformatica.github.io/vscode_mkdocs/
+</a>
 
 ---
