@@ -10,8 +10,34 @@ theme:
     accent: blue
   logo: assets/images/logo.png
   favicon: assets/images/favicon.ico
+  features:
+    # - navigation.tabs
+    - navigation.top
+    # - navigation.instant
+    - navigation.expand
+    # - navigation.sections
+    # - navigation.tracking
+    # - navigation.tabs.sticky
+    - navigation.footer
+
+plugins: # https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
+  - mkdocs-breadcrumbs-plugin:
+      delimiter: " / "  # separator between sections
+      log_level: "WARNING"  # "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"
+      exclude_paths:
+        # - "docs/mkdocs/**"
+        # - "docs/mkdocs"   # avoid generating index.md
+      additional_index_folders:
+        - temp_dir
+      generate_home_index: false
+      use_page_titles: true # use page title instead of path in breadcrumbs
+      home_text: "Home"
 
 nav:
-  - 0. Inicio: index.md
-  - 1. Visual Studio Code: guia-vscode.md
-  - 2. MkDocs: guia-mkdocs.md
+  - Inicio: index.md
+  - 1. Visual Studio Code:
+      - Introducción: vs_code/index.md
+      - Guía: vs_code/guia-vscode.md
+  - 2. MkDocs:
+      - Introducción: mkdocs/index.md
+      - Guía: mkdocs/guia-mkdocs.md
