@@ -130,7 +130,7 @@ Y arrancamos el servidor de desarrollo con:
 mkdocs serve
 ```
 
-Esto abrirá un sitio web local en:\
+Esto abrirá un sitio web local en:  
 👉 [http://127.0.0.1:8000](http://127.0.0.1:8000/)
 
 A medida que editemos los archivos Markdown, los cambios se reflejarán automáticamente en el navegador.
@@ -195,15 +195,12 @@ pip install -r requirements.txt`
 
 ---
 
-Perfecto, tu archivo `guia-mkdocs.md` está muy bien organizado y claro. A continuación te presento el bloque siguiente: la **configuración básica del archivo `mkdocs.yml`**, siguiendo el estilo y estructura que llevas.
-
----
-
 ## 🧩 7. Configurar el archivo `mkdocs.yml`
 
 ---
 
-El archivo `mkdocs.yml` es el archivo de configuración principal del proyecto. Desde aquí podemos definir:
+El archivo `mkdocs.yml` es el archivo de configuración principal del proyecto.  
+Desde aquí podemos definir:
 
 - El **nombre del sitio web**.
 
@@ -231,7 +228,8 @@ Esto define el nombre del sitio y activa el tema `material` (si lo hemos instala
 
 ### 📌 Navegación
 
-Podemos personalizar el orden y los títulos del menú con la clave `nav`. Por ejemplo, si hemos creado varios archivos `.md` dentro de `docs/`, como:
+Podemos personalizar el orden y los títulos del menú con la clave `nav`.  
+Por ejemplo, si hemos creado varios archivos `.md` dentro de `docs/`, como:
 
 ```pgsql
 docs/
@@ -287,7 +285,8 @@ Y actualizamos el navegador en [http://127.0.0.1:8000](http://127.0.0.1:8000/) p
 
 ---
 
-MkDocs permite personalizar el diseño de nuestro sitio si estamos utilizando el tema `material`. Podemos modificar los **colores**, el **favicon**, el **logo**, el **idioma** y más elementos visuales para adaptarlo a nuestras necesidades.
+MkDocs permite personalizar el diseño de nuestro sitio si estamos utilizando el tema `material`.  
+Podemos modificar los **colores**, el **favicon**, el **logo**, el **idioma** y más elementos visuales para adaptarlo a nuestras necesidades.
 
 > 📚 Documentación oficial del tema Material:  
 > 👉 [https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
@@ -310,6 +309,9 @@ theme:
 
 Colores disponibles: `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`.
 
+![mkdocs-material-primary-colors](/assets/images/mkdocs-material-primary-colors.png)
+
+
 > 📝 Referencia de colores disponibles:  
 > 👉 [https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors)
 
@@ -322,7 +324,7 @@ Podemos indicar el idioma para que los elementos de la interfaz (como "Search" o
 ```yaml
 theme:
   name: material
-  language: es`
+  language: es
 ```
 
 > 🌍 Lista de idiomas disponibles:  
@@ -395,7 +397,9 @@ theme:
 
 ---
 
-### 🧪 Ejemplo completo de configuración visual
+## 📙 9. Contenido de `mkdocs.yml` y Estructura del Proyecto
+
+El **contenido** final que tenemos actualmente en nuestro documento **de configuración `mkdocs.yml`**:  
 
 ```yaml
 #mkdocs.yml
@@ -416,8 +420,10 @@ nav:
   - 2. MkDocs: guia-mkdocs.md
 ```
 
-<!-- ![Estructura del proyecto](/assets/images/estructura_proyecto.png) -->
-<figure>
-    <img src="/assets/images/estructura_proyecto.png" alt="Estructura del proyecto"/>
-    <figcaption>Estructura del proyecto</figcaption>
-</figure>
+La **estructura completa del proyecto** actualmente se verá como sigue:
+
+![Estructura del proyecto](/assets/images/estructura_proyecto.png)  
+
+## 🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
+
+🧷 [https://www.mkdocs.org/user-guide/cli/#mkdocs](https://www.mkdocs.org/user-guide/cli/#mkdocs)
