@@ -27,6 +27,7 @@ plugins: # https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
       exclude_paths:
         # - "docs/mkdocs/**"
         - "docs/mkdocs"   # avoid generating index.md
+        - "docs/vs_code"   # avoid generating index.md
       additional_index_folders:
         - temp_dir
       generate_home_index: false
