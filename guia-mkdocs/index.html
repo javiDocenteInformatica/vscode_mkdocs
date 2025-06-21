@@ -1,0 +1,1200 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../guia-vscode/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>2. MkDocs - Documentación VsCode + MkDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mkdocs-python-package" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Documentación VsCode + MkDocs" class="md-header__button md-logo" aria-label="Documentación VsCode + MkDocs" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentación VsCode + MkDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. MkDocs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/javiDocenteInformatica/vscode_mkdocs" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentación VsCode + MkDocs" class="md-nav__button md-logo" aria-label="Documentación VsCode + MkDocs" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Documentación VsCode + MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/javiDocenteInformatica/vscode_mkdocs" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0. Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guia-vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Visual Studio Code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2. MkDocs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. MkDocs
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 1. Requisitos previos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-crear-un-entorno-virtual-opcional-pero-recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 2. Crear un entorno virtual (opcional, pero recomendado)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-instalar-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 3. Instalar MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-crear-un-nuevo-proyecto-con-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 4. Crear un nuevo proyecto con MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejecutar-el-servidor-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 5. Ejecutar el servidor local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-exportar-los-modulos-del-entorno-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 6. Exportar los módulos del entorno virtual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 6. Exportar los módulos del entorno virtual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-asegurarnos-de-que-el-entorno-virtual-esta-activado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 1. Asegurarnos de que el entorno virtual está activado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-generar-el-archivo-requirementstxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 2. Generar el archivo requirements.txt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-incluirlo-en-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 3. Incluirlo en el proyecto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-configurar-el-archivo-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 7. Configurar el archivo mkdocs.yml
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 7. Configurar el archivo mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#titulo-del-sitio-y-tema" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Título del sitio y tema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navegacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Navegación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-completo-de-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Resultado completo de ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probar-los-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Probar los cambios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-personalizacion-visual-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 8. Personalización visual del sitio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 8. Personalización visual del sitio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colores-primario-y-de-acento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Colores primario y de acento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idioma-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Idioma del sitio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo-y-favicon-en-que-se-diferencian" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ Logo y favicon: ¿en qué se diferencian?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-recomendada-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Estructura recomendada del proyecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-correcta-en-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuración correcta en mkdocs.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Recomendaciones importantes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlace-a-la-documentacion-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Enlace a la documentación oficial
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-contenido-de-mkdocsyml-y-estructura-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📙 9. Contenido de mkdocs.yml y Estructura del Proyecto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-subir-el-proyecto-a-github-pages-para-hacerlo-publico" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 1. Requisitos previos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-crear-un-entorno-virtual-opcional-pero-recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 2. Crear un entorno virtual (opcional, pero recomendado)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-instalar-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 3. Instalar MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-crear-un-nuevo-proyecto-con-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 4. Crear un nuevo proyecto con MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejecutar-el-servidor-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 5. Ejecutar el servidor local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-exportar-los-modulos-del-entorno-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 6. Exportar los módulos del entorno virtual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 6. Exportar los módulos del entorno virtual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-asegurarnos-de-que-el-entorno-virtual-esta-activado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 1. Asegurarnos de que el entorno virtual está activado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-generar-el-archivo-requirementstxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 2. Generar el archivo requirements.txt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-incluirlo-en-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paso 3. Incluirlo en el proyecto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-configurar-el-archivo-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 7. Configurar el archivo mkdocs.yml
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 7. Configurar el archivo mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#titulo-del-sitio-y-tema" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Título del sitio y tema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navegacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Navegación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-completo-de-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Resultado completo de ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probar-los-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Probar los cambios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-personalizacion-visual-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 8. Personalización visual del sitio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 8. Personalización visual del sitio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colores-primario-y-de-acento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Colores primario y de acento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idioma-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Idioma del sitio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo-y-favicon-en-que-se-diferencian" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ Logo y favicon: ¿en qué se diferencian?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-recomendada-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Estructura recomendada del proyecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-correcta-en-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuración correcta en mkdocs.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Recomendaciones importantes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enlace-a-la-documentacion-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Enlace a la documentación oficial
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-contenido-de-mkdocsyml-y-estructura-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📙 9. Contenido de mkdocs.yml y Estructura del Proyecto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-subir-el-proyecto-a-github-pages-para-hacerlo-publico" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="mkdocs-python-package">MkDocs (Python Package)</h1>
+<hr />
+<p>MkDocs es una herramienta que nos permite generar sitios web estáticos a partir de archivos Markdown.<br />
+Es muy útil para crear documentación técnica y publicarla fácilmente, por ejemplo, en <strong>GitHub Pages</strong>.</p>
+<hr />
+<h2 id="1-requisitos-previos">🧩 1. Requisitos previos</h2>
+<hr />
+<p>Antes de comenzar, debemos asegurarnos de tener <strong>Python 3</strong> instalado en nuestro sistema.</p>
+<p>Podemos comprobarlo desde una terminal ejecutando:</p>
+<pre><code class="language-powershell">python --version
+</code></pre>
+<p>o</p>
+<pre><code class="language-powershell">python3 --version
+</code></pre>
+<p>Si no lo tenemos, podemos descargarlo desde la página oficial:\
+👉 <a href="https://www.python.org/downloads/">https://www.python.org/downloads</a></p>
+<blockquote>
+<p>Durante la instalación, es importante <strong>activar la opción</strong>:<br />
+✅ "Add Python to PATH"</p>
+</blockquote>
+<p>También necesitamos tener disponible <code>pip</code>, que normalmente se instala junto a Python:</p>
+<pre><code class="language-python">pip --version
+</code></pre>
+<hr />
+<h2 id="2-crear-un-entorno-virtual-opcional-pero-recomendado">🧩 2. Crear un entorno virtual (opcional, pero recomendado)</h2>
+<hr />
+<p>Para evitar conflictos con otras herramientas y mantener las dependencias organizadas, podemos crear un entorno virtual en el directorio donde vayamos a trabajar:</p>
+<pre><code class="language-python">python -m venv .venv
+</code></pre>
+<p>Luego lo activamos según el sistema operativo:</p>
+<ul>
+<li>En <strong>Windows (CMD)</strong>:</li>
+</ul>
+<pre><code class="language-cmd">.venv\Scripts\activate
+</code></pre>
+<ul>
+<li>En <strong>PowerShell</strong>:</li>
+</ul>
+<pre><code class="language-powershell">.venv\Scripts\Activate.ps1
+</code></pre>
+<ul>
+<li>En <strong>Linux/macOS</strong>:</li>
+</ul>
+<pre><code class="language-bash">source .venv/bin/activate
+</code></pre>
+<hr />
+<h2 id="3-instalar-mkdocs">🧩 3. Instalar MkDocs</h2>
+<hr />
+<p>Con el entorno activado, instalamos MkDocs con:</p>
+<pre><code class="language-python">pip install mkdocs
+</code></pre>
+<p>También podemos instalar el tema <strong>Material for MkDocs</strong>, que nos permitirá generar documentación más visual y moderna:</p>
+<pre><code class="language-python">pip install mkdocs-material
+</code></pre>
+<hr />
+<h2 id="4-crear-un-nuevo-proyecto-con-mkdocs">🧩 4. Crear un nuevo proyecto con MkDocs</h2>
+<hr />
+<p>Creamos un nuevo proyecto ejecutando:</p>
+<pre><code class="language-python">mkdocs new mi-documentacion
+</code></pre>
+<p>Esto generará una estructura como esta:</p>
+<pre><code class="language-pgsql">mi-documentacion/
+├── docs/
+│   └── index.md
+└── mkdocs.yml
+</code></pre>
+<ul>
+<li>
+<p>La carpeta <code>docs/</code> contendrá nuestros archivos <code>.md</code>.</p>
+</li>
+<li>
+<p>El archivo <code>mkdocs.yml</code> nos servirá para configurar el sitio web.</p>
+</li>
+</ul>
+<hr />
+<h2 id="5-ejecutar-el-servidor-local">🧩 5. Ejecutar el servidor local</h2>
+<hr />
+<p>Accedemos a la carpeta del proyecto:</p>
+<pre><code class="language-powershell">cd mi-documentacion
+</code></pre>
+<p>Y arrancamos el servidor de desarrollo con:</p>
+<pre><code class="language-powershell">mkdocs serve
+</code></pre>
+<p>Esto abrirá un sitio web local en:<br />
+👉 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a></p>
+<p>A medida que editemos los archivos Markdown, los cambios se reflejarán automáticamente en el navegador.</p>
+<h2 id="6-exportar-los-modulos-del-entorno-virtual">🧩 6. Exportar los módulos del entorno virtual</h2>
+<hr />
+<p>Si hemos utilizado un <strong>entorno virtual</strong> para instalar MkDocs y sus extensiones, es importante generar un archivo con la lista de dependencias.<br />
+De esta forma, otras personas podrán instalar exactamente los mismos paquetes y versiones.</p>
+<h3 id="paso-1-asegurarnos-de-que-el-entorno-virtual-esta-activado">Paso 1. Asegurarnos de que el entorno virtual está activado</h3>
+<p>Antes de exportar, activamos el entorno si no lo estaba ya:</p>
+<ul>
+<li>En <strong>CMD</strong>:</li>
+</ul>
+<pre><code class="language-cmd">.venv\Scripts\activate
+</code></pre>
+<ul>
+<li>En <strong>PowerShell</strong>:</li>
+</ul>
+<pre><code class="language-powershell">.venv\Scripts\Activate.ps1
+</code></pre>
+<ul>
+<li>En <strong>Linux/macOS</strong>:</li>
+</ul>
+<pre><code class="language-bash">source .venv/bin/activate
+</code></pre>
+<h3 id="paso-2-generar-el-archivo-requirementstxt">Paso 2. Generar el archivo <code>requirements.txt</code></h3>
+<p>Ejecutamos:</p>
+<pre><code class="language-bash">pip freeze &gt; requirements.txt
+</code></pre>
+<p>Esto generará un archivo llamado <code>requirements.txt</code> en el directorio actual, con todas las dependencias instaladas en el entorno.</p>
+<p>Ejemplo de contenido:</p>
+<pre><code class="language-makefile">click==8.1.7
+Jinja2==3.1.2
+Markdown==3.5.2
+mkdocs==1.5.3
+mkdocs-material==9.5.13
+...
+</code></pre>
+<h3 id="paso-3-incluirlo-en-el-proyecto">Paso 3. Incluirlo en el proyecto</h3>
+<p>Este archivo debe añadirse al repositorio (por ejemplo, junto al archivo <code>mkdocs.yml</code>) para que otros desarrolladores puedan instalar las mismas dependencias con:</p>
+<pre><code class="language-bash">pip install -r requirements.txt`
+</code></pre>
+<hr />
+<h2 id="7-configurar-el-archivo-mkdocsyml">🧩 7. Configurar el archivo <code>mkdocs.yml</code></h2>
+<hr />
+<p>El archivo <code>mkdocs.yml</code> es el archivo de configuración principal del proyecto.<br />
+Desde aquí podemos definir:</p>
+<ul>
+<li>
+<p>El <strong>nombre del sitio web</strong>.</p>
+</li>
+<li>
+<p>El <strong>tema visual</strong> (como <code>material</code>).</p>
+</li>
+<li>
+<p>El <strong>menú de navegación</strong>.</p>
+</li>
+<li>
+<p>Otros ajustes como el idioma, favicon, estilos personalizados, etc.</p>
+</li>
+</ul>
+<hr />
+<h3 id="titulo-del-sitio-y-tema">📌 Título del sitio y tema</h3>
+<p>Abrimos el archivo <code>mkdocs.yml</code> y configuramos al menos estas dos líneas básicas:</p>
+<pre><code class="language-yaml">site_name: Mi Documentación
+theme:
+  name: material
+</code></pre>
+<p>Esto define el nombre del sitio y activa el tema <code>material</code> (si lo hemos instalado previamente con <code>pip install mkdocs-material</code>).</p>
+<hr />
+<h3 id="navegacion">📌 Navegación</h3>
+<p>Podemos personalizar el orden y los títulos del menú con la clave <code>nav</code>.<br />
+Por ejemplo, si hemos creado varios archivos <code>.md</code> dentro de <code>docs/</code>, como:</p>
+<pre><code class="language-pgsql">docs/
+├── index.md
+├── guia-vscode.md
+├── guia-mkdocs.md
+</code></pre>
+<p>Entonces configuramos la navegación así:</p>
+<pre><code class="language-yaml">nav:
+  - 0. Inicio: index.md
+  - 1. Visual Studio Code: guia-vscode.md
+  - 2. MkDocs: guia-mkdocs.md
+</code></pre>
+<p>Esto genera un menú superior con los nombres que hayamos indicado, enlazando a las páginas correspondientes.</p>
+<hr />
+<h3 id="resultado-completo-de-ejemplo">🛠️ Resultado completo de ejemplo</h3>
+<p>Este sería un archivo <code>mkdocs.yml</code> básico:</p>
+<pre><code class="language-yaml">#mkdocs.yml
+site_name: Documentación VsCode + MkDocs
+theme:
+  name: material
+
+nav:
+  - 0. Inicio: index.md
+  - 1. Visual Studio Code: guia-vscode.md
+  - 2. MkDocs: guia-mkdocs.md
+</code></pre>
+<hr />
+<h3 id="probar-los-cambios">✅ Probar los cambios</h3>
+<p>Una vez guardado el archivo <code>mkdocs.yml</code>, volvemos a ejecutar:</p>
+<pre><code class="language-powershell">mkdocs serve
+</code></pre>
+<p>Y actualizamos el navegador en <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a> para ver el nuevo menú y título aplicados.</p>
+<hr />
+<h2 id="8-personalizacion-visual-del-sitio">🧩 8. Personalización visual del sitio</h2>
+<hr />
+<p>MkDocs permite personalizar el diseño de nuestro sitio si estamos utilizando el tema <code>material</code>.<br />
+Podemos modificar los <strong>colores</strong>, el <strong>favicon</strong>, el <strong>logo</strong>, el <strong>idioma</strong> y más elementos visuales para adaptarlo a nuestras necesidades.</p>
+<blockquote>
+<p>📚 Documentación oficial del tema Material:<br />
+👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/</a></p>
+</blockquote>
+<hr />
+<h3 id="colores-primario-y-de-acento">🎨 Colores primario y de acento</h3>
+<p>Podemos elegir un color principal (barra superior) y un color de acento (enlaces, botones, resaltados, etc.).</p>
+<p>Ejemplo en <code>mkdocs.yml</code>:</p>
+<pre><code class="language-yaml">theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: blue
+</code></pre>
+<p>Colores disponibles: <code>red</code>, <code>pink</code>, <code>purple</code>, <code>deep purple</code>, <code>indigo</code>, <code>blue</code>, <code>light blue</code>, <code>cyan</code>, <code>teal</code>, <code>green</code>, <code>light green</code>, <code>lime</code>, <code>yellow</code>, <code>amber</code>, <code>orange</code>, <code>deep orange</code>, <code>brown</code>, <code>grey</code>, <code>blue grey</code>.</p>
+<p><img alt="mkdocs-material-primary-colors" src="/assets/images/mkdocs-material-primary-colors.png" /></p>
+<blockquote>
+<p>📝 Referencia de colores disponibles:<br />
+👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors</a></p>
+</blockquote>
+<hr />
+<h3 id="idioma-del-sitio">🌐 Idioma del sitio</h3>
+<p>Podemos indicar el idioma para que los elementos de la interfaz (como "Search" o "Table of contents") aparezcan traducidos:</p>
+<pre><code class="language-yaml">theme:
+  name: material
+  language: es
+</code></pre>
+<blockquote>
+<p>🌍 Lista de idiomas disponibles:<br />
+👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/">https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/</a></p>
+</blockquote>
+<hr />
+<h3 id="logo-y-favicon-en-que-se-diferencian">🖼️ Logo y favicon: ¿en qué se diferencian?</h3>
+<p>Antes de configurarlos, conviene saber qué función tiene cada uno:</p>
+<ul>
+<li>
+<p><strong>Favicon</strong>: es el pequeño icono que aparece en la pestaña del navegador, en los marcadores o cuando se guarda el sitio como acceso directo.</p>
+</li>
+<li>
+<p><strong>Logo</strong>: es la imagen que aparece en la barra de navegación del sitio, junto al título. Suele ser más grande y representativo.</p>
+</li>
+</ul>
+<p>Ambos elementos se configuran dentro del bloque <code>theme:</code> en el archivo <code>mkdocs.yml</code>, y deben estar ubicados <strong>dentro de la carpeta <code>docs/</code></strong>, preferiblemente organizados en una subcarpeta <code>assets/images/</code>.</p>
+<hr />
+<h3 id="estructura-recomendada-del-proyecto">📁 Estructura recomendada del proyecto</h3>
+<pre><code class="language-pgsql">docs/
+├── index.md
+├── guia-vscode.md
+├── guia-mkdocs.md
+├── assets/
+│   └── images/
+│       ├── logo.svg         ✅ Logo (preferentemente en formato SVG)
+│       └── favicon.png      ✅ Favicon (formato PNG de 32x32 o similar)
+</code></pre>
+<hr />
+<h3 id="configuracion-correcta-en-mkdocsyml">⚙️ Configuración correcta en <code>mkdocs.yml</code></h3>
+<pre><code class="language-yaml">theme:
+  name: material
+  language: es
+  palette:
+    primary: indigo
+    accent: blue
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+</code></pre>
+<blockquote>
+<p>✅ Ambos deben definirse dentro de la sección <code>theme:</code>.<br />
+⚠️ Ya no se debe utilizar <code>extra.favicon</code>, ya que es una práctica obsoleta y no compatible con las últimas versiones del tema Material.</p>
+</blockquote>
+<hr />
+<h3 id="recomendaciones-importantes">📝 Recomendaciones importantes</h3>
+<ul>
+<li>
+<p>El <strong>logo</strong> puede estar en formato <code>.svg</code> o <code>.png</code>. Se recomienda <strong><code>.svg</code></strong> por su nitidez y escalabilidad.</p>
+</li>
+<li>
+<p>El <strong>favicon</strong> debe estar en formato <code>.png</code> o <code>.ico</code>, preferentemente en resolución <strong>32x32 px</strong>.</p>
+</li>
+<li>
+<p>Asegurarse de que los archivos existen y están correctamente nombrados (sin espacios ni mayúsculas).</p>
+</li>
+<li>
+<p>Después de cualquier cambio, <strong>reiniciamos el servidor</strong> con <code>Ctrl + C</code> y luego <code>mkdocs serve</code>.</p>
+</li>
+<li>
+<p>Si el favicon no se actualiza, <strong>forzamos la recarga en el navegador</strong> con <code>Ctrl + Shift + R</code> o abrimos en modo incógnito.</p>
+</li>
+</ul>
+<hr />
+<h3 id="enlace-a-la-documentacion-oficial">📚 Enlace a la documentación oficial</h3>
+<p>👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/">https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/</a></p>
+<hr />
+<h2 id="9-contenido-de-mkdocsyml-y-estructura-del-proyecto">📙 9. Contenido de <code>mkdocs.yml</code> y Estructura del Proyecto</h2>
+<p>El <strong>contenido</strong> final que tenemos actualmente en nuestro documento <strong>de configuración <code>mkdocs.yml</code></strong>:  </p>
+<pre><code class="language-yaml">#mkdocs.yml
+site_name: Documentación VsCode + MkDocs
+repo_url: https://github.com/javiDocenteInformatica/vscode_mkdocs
+theme:
+  name: material
+  language: es
+  palette:
+    primary: indigo
+    accent: blue
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+
+nav:
+  - 0. Inicio: index.md
+  - 1. Visual Studio Code: guia-vscode.md
+  - 2. MkDocs: guia-mkdocs.md
+</code></pre>
+<p>La <strong>estructura completa del proyecto</strong> actualmente se verá como sigue:</p>
+<p><img alt="Estructura del proyecto" src="/assets/images/estructura_proyecto.png" />  </p>
+<h2 id="10-subir-el-proyecto-a-github-pages-para-hacerlo-publico">🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público</h2>
+<p>🧷 <a href="https://www.mkdocs.org/user-guide/cli/#mkdocs">https://www.mkdocs.org/user-guide/cli/#mkdocs</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
