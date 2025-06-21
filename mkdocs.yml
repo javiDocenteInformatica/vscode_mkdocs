@@ -1,15 +1,14 @@
 #mkdocs.yml
 site_name: Documentación VsCode + MkDocs
+repo_url: https://github.com/javiDocenteInformatica/vscode_mkdocs
 theme:
   name: material
   language: es
   palette:
     primary: indigo
     accent: blue
-  
-extra:
-  logo: images/logo.png
-  favicon: images/logo.png
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
 
 nav:
   - 0. Inicio: index.md
