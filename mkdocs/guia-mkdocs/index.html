@@ -53,7 +53,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -116,6 +125,46 @@
     
     
     
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
     
     
       <div class="md-header__source">
@@ -582,6 +631,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#9-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ 9. Imágenes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#9-contenido-de-mkdocsyml-y-estructura-del-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       📙 9. Contenido de mkdocs.yml y Estructura del Proyecto
@@ -993,6 +1051,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#9-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ 9. Imágenes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#9-contenido-de-mkdocsyml-y-estructura-del-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       📙 9. Contenido de mkdocs.yml y Estructura del Proyecto
@@ -1373,7 +1440,7 @@ Podemos modificar los <strong>colores</strong>, el <strong>favicon</strong>, el 
 <p>Colores disponibles: <code>red</code>, <code>pink</code>, <code>purple</code>, <code>deep purple</code>, <code>indigo</code>, <code>blue</code>, <code>light blue</code>, <code>cyan</code>, <code>teal</code>, <code>green</code>, <code>light green</code>, <code>lime</code>, <code>yellow</code>, <code>amber</code>, <code>orange</code>, <code>deep orange</code>, <code>brown</code>, <code>grey</code>, <code>blue grey</code>.</p>
 <!-- ![mkdocs-material-primary-colors](assets/images/mkdocs-material-primary-colors.png) -->
 <p><a href="/assets/mkdocs_material/mkdocs-material-primary-colors.png" target="_blank">
-  <img src="/assets/mkdocs_material/mkdocs-material-primary-colors.png" alt="mkdocs-material-primary-colors">
+  <a class="glightbox" href="/assets/mkdocs_material/mkdocs-material-primary-colors.png" data-type="image" data-width="100%" data-height="auto" data-title="mkdocs-material-primary-colors" data-desc-position="bottom"><img src="/assets/mkdocs_material/mkdocs-material-primary-colors.png" alt="mkdocs-material-primary-colors"></a>
 </a></p>
 <blockquote>
 <p>📝 Referencia de colores disponibles:<br />
@@ -1449,7 +1516,14 @@ Podemos modificar los <strong>colores</strong>, el <strong>favicon</strong>, el 
 </ul>
 <hr />
 <h3 id="enlace-a-la-documentacion-oficial">📚 Enlace a la documentación oficial</h3>
-<p>👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/</a></p>
+<p>🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/</a></p>
+<hr />
+<h2 id="9-imagenes">🖼️ 9. Imágenes</h2>
+<p>🧷 <a href="https://squidfunk.github.io/mkdocs-material/reference/images/?h=images">Donath, M. (s. f.). Images - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/reference/images/</a></p>
+<p>🧷 <a href="https://github.com/blueswen/mkdocs-glightbox#usage">Blueswen. (s. f.). mkdocs-glightbox: A MkDocs plugin supports image lightbox (zoom effect) with GLightbox.Recuperado 22 de junio de 2025, de https://github.com/blueswen/mkdocs-glightbox#usage</a></p>
+<p>🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#caption">Donath, M. (s. f.). Python Markdown Extensions - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/</a></p>
+<p>🧷 <a href="https://squidfunk.github.io/mkdocs-material/reference/images/#image-captions">Donath, M. (s. f.). Images - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/reference/images/</a></p>
+<p>🧷 <a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/">Caption. (s. f.). Github.io. Recuperado 22 de junio de 2025, de https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/</a></p>
 <hr />
 <h2 id="9-contenido-de-mkdocsyml-y-estructura-del-proyecto">📙 9. Contenido de <code>mkdocs.yml</code> y Estructura del Proyecto</h2>
 <p>El <strong>contenido</strong> final que tenemos actualmente en nuestro documento <strong>de configuración <code>mkdocs.yml</code></strong>:  </p>
@@ -1473,7 +1547,7 @@ nav:
 <p>La <strong>estructura completa del proyecto</strong> actualmente se verá como sigue:</p>
 <!-- ![Estructura del proyecto](assets/images/estructura_proyecto.png)   -->
 <p><a href="/assets/mkdocs_material/estructura_proyecto.png" target="_blank">
-  <img src="/assets/mkdocs_material/estructura_proyecto.png" alt="Estructura del proyecto">
+  <a class="glightbox" href="/assets/mkdocs_material/estructura_proyecto.png" data-type="image" data-width="100%" data-height="auto" data-title="Estructura del proyecto" data-desc-position="bottom"><img src="/assets/mkdocs_material/estructura_proyecto.png" alt="Estructura del proyecto"></a>
 </a></p>
 <h2 id="10-subir-el-proyecto-a-github-pages-para-hacerlo-publico">🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público</h2>
 <p>🧷 <em>Repositorio publicado:</em><br />
@@ -1535,28 +1609,28 @@ Para ello, utilizaremos <strong>GitHub Pages</strong>, un servicio gratuito que 
 <p>📷  </p>
 <!-- ![Paso 1: Settings > Pages](assets\github_pages\activando_github_pages_1.png) -->
 <p><a href="/assets/github_pages/activando_github_pages_1.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_1.png" alt="Paso 1: Settings > Pages"&gt;
+  <a class="glightbox" href="/assets/github_pages/activando_github_pages_1.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 1: Settings " data-desc-position="bottom"><img src="/assets/github_pages/activando_github_pages_1.png" alt="Paso 1: Settings ></a> Pages"&gt;
 </a></p>
 <hr />
 <h4 id="paso-2-en-el-menu-lateral-entramos-en-la-opcion-pages">Paso 2: En el menú lateral, entramos en la opción <strong>Pages</strong></h4>
 <p>📷  </p>
 <!-- ![Paso 2: Menú lateral Pages](assets\github_pages\activando_github_pages_2.png) -->
 <p><a href="/assets/github_pages/activando_github_pages_2.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_2.png" alt="Paso 2: Menú lateral Pages">
+  <a class="glightbox" href="/assets/github_pages/activando_github_pages_2.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 2: Menú lateral Pages" data-desc-position="bottom"><img src="/assets/github_pages/activando_github_pages_2.png" alt="Paso 2: Menú lateral Pages"></a>
 </a></p>
 <hr />
 <h4 id="paso-3-elegimos-la-rama-gh-pages-y-la-carpeta-root-como-fuente">Paso 3: Elegimos la rama <code>gh-pages</code> y la carpeta <code>/ (root)</code> como fuente</h4>
 <p>📷  </p>
 <!-- ![Paso 3: Selección de rama y carpeta](assets\github_pages\activando_github_pages_3.png) -->
 <p><a href="/assets/github_pages/activando_github_pages_3.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_3.png" alt="Paso 3: Selección de rama y carpeta">
+  <a class="glightbox" href="/assets/github_pages/activando_github_pages_3.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 3: Selección de rama y carpeta" data-desc-position="bottom"><img src="/assets/github_pages/activando_github_pages_3.png" alt="Paso 3: Selección de rama y carpeta"></a>
 </a></p>
 <hr />
 <h4 id="paso-4-hacemos-clic-en-save-para-aplicar-los-cambios">Paso 4: Hacemos clic en <strong>Save</strong> para aplicar los cambios</h4>
 <p>📷  </p>
 <!-- ![Paso 4: Guardar configuración](assets\github_pages\activando_github_pages_4.png) -->
 <p><a href="/assets/github_pages/activando_github_pages_4.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_4.png" alt="Paso 4: Guardar configuración">
+  <a class="glightbox" href="/assets/github_pages/activando_github_pages_4.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 4: Guardar configuración" data-desc-position="bottom"><img src="/assets/github_pages/activando_github_pages_4.png" alt="Paso 4: Guardar configuración"></a>
 </a></p>
 <hr />
 <h3 id="104-hacer-el-repositorio-publico">10.4 Hacer el repositorio público</h3>
@@ -1565,23 +1639,27 @@ Para ello, utilizaremos <strong>GitHub Pages</strong>, un servicio gratuito que 
 <p>📷  </p>
 <!-- ![Paso 5: Danger Zone](assets\github_pages\activando_github_pages_5.png) -->
 <p><a href="/assets/github_pages/activando_github_pages_5.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_5.png" alt="Paso 5: Danger Zone">
+  <a class="glightbox" href="/assets/github_pages/activando_github_pages_5.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 5: Danger Zone" data-desc-position="bottom"><img src="/assets/github_pages/activando_github_pages_5.png" alt="Paso 5: Danger Zone"></a>
 </a></p>
 <hr />
 <h4 id="paso-6-haz-clic-en-change-visibility-y-selecciona-change-to-public">Paso 6: Haz clic en <strong>Change visibility</strong> y selecciona <strong>Change to public</strong></h4>
 <p>📷  </p>
 <!-- ![Paso 6: Confirmar cambio de visibilidad](assets\github_pages\activando_github_pages_6.png) -->
 <p><a href="/assets/github_pages/activando_github_pages_6.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_6.png" alt="Paso 6: Confirmar cambio de visibilidad">
+  <a class="glightbox" href="/assets/github_pages/activando_github_pages_6.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 6: Confirmar cambio de visibilidad" data-desc-position="bottom"><img src="/assets/github_pages/activando_github_pages_6.png" alt="Paso 6: Confirmar cambio de visibilidad"></a>
 </a></p>
 <hr />
 <h4 id="paso-7-confirma-los-efectos-y-escribe-el-nombre-del-repositorio-para-validar">Paso 7: Confirma los efectos y escribe el nombre del repositorio para validar</h4>
-<p>📷  </p>
-<!-- ![Paso 7: Confirmación final](assets\github_pages\activando_github_pages_7.png) -->
-<p><a href="assets/github_pages/activando_github_pages_7.png" target="_blank">
-  <img src="assets/github_pages/activando_github_pages_7.png" alt="Paso 7: Confirmación final">
-</a></p>
-<!-- [![Paso 7: Confirmación final](/assets/github_pages/activando_github_pages_7.png)](/assets/github_pages/activando_github_pages_7.png){ target="_blank" } -->
+<figure>
+<p><a class="glightbox" href="../assets/github_pages/activando_github_pages_7.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 7: Confirmación final" data-desc-position="bottom"><img alt="Paso 7: Confirmación final" loading="lazy" src="../assets/github_pages/activando_github_pages_7.png" /></a></p>
+<figcaption>
+<p>📷 Paso 7: Confirmación final</p>
+</figcaption>
+</figure>
+<!-- <a href="assets/github_pages/activando_github_pages_7.png" target="_blank">
+  <a class="glightbox" href="assets/github_pages/activando_github_pages_7.png" data-type="image" data-width="100%" data-height="auto" data-title="Paso 7: Confirmación final" data-desc-position="bottom"><img src="assets/github_pages/activando_github_pages_7.png" alt="Paso 7: Confirmación final"></a>
+</a> -->
+<!-- [![Paso 7: Confirmación final](/assets/github_pages/activando_github_pages_7.png)](/assets/github_pages/activando_github_pages_7.png){ target="_blank" rel="noopener"} -->
 
 <hr />
 <h3 id="105-acceder-a-la-pagina-publica">10.5 Acceder a la página pública</h3>
@@ -1677,5 +1755,7 @@ https://javidocenteinformatica.github.io/vscode_mkdocs/
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
