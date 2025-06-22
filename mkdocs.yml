@@ -20,8 +20,9 @@ theme:
     # - navigation.tabs.sticky
     - navigation.footer
 
-plugins: # https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
-  - mkdocs-breadcrumbs-plugin:
+plugins: 
+  - search
+  - mkdocs-breadcrumbs-plugin: # https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
       delimiter: " / "  # separator between sections
       log_level: "WARNING"  # "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"
       exclude_paths:
@@ -33,6 +34,23 @@ plugins: # https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
       generate_home_index: false
       use_page_titles: true # use page title instead of path in breadcrumbs
       home_text: "Inicio"
+  - glightbox: #https://github.com/blueswen/mkdocs-glightbox#usage
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_themed: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 
 ## Sólo funciona si eres insider. Esto te permitiría abrir enlaces en una nueva pestaña.
 # plugins:
@@ -40,6 +58,8 @@ plugins: # https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin
 #       links_attr_map:
 #         target: _blank
 #         rel: noopener noreferrer
+
+
 
 nav:
   - Inicio: index.md
