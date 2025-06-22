@@ -1,0 +1,44 @@
+---------------------------------------- 
+Carpeta raÃ­z: C:\GitHub\vscode_mkdocs\docs 
+---------------------------------------- 
+Listado de rutas de carpetas para el volumen WinToGo
+El número de serie del volumen es 328F-9F08
+C:.
+|   arbol.bat
+|   arbol_directorios.txt
+|   index.md
+|   
++---assets
+|   |   index.md
+|   |   
+|   \---images
+|           estructura_proyecto.png
+|           favicon.ico
+|           favicon_io.zip
+|           index.md
+|           logo.png
+|           mkdocs-material-primary-colors.png
+|           
++---mkdocs
+|   |   guia-mkdocs.md
+|   |   index.md
+|   |   
+|   \---assets
+|       |   index.md
+|       |   
+|       +---github_pages
+|       |       activando_github_pages_1.png
+|       |       activando_github_pages_2.png
+|       |       activando_github_pages_3.png
+|       |       activando_github_pages_4.png
+|       |       activando_github_pages_5.png
+|       |       activando_github_pages_6.png
+|       |       activando_github_pages_7.png
+|       |       
+|       \---mkdocs_material
+|               mkdocs-material-primary-colors.png
+|               
+\---vs_code
+        guia-vscode.md
+        index.md
+        

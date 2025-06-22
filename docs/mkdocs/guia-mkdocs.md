@@ -310,8 +310,8 @@ theme:
 Colores disponibles: `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`.
 
 <!-- ![mkdocs-material-primary-colors](assets/images/mkdocs-material-primary-colors.png) -->
-<a href="../assets/images/mkdocs-material-primary-colors.png" target="_blank">
-  <img src="../assets/images/mkdocs-material-primary-colors.png" alt="mkdocs-material-primary-colors">
+<a href="/assets/mkdocs_material/mkdocs-material-primary-colors.png" target="_blank">
+  <img src="/assets/mkdocs_material/mkdocs-material-primary-colors.png" alt="mkdocs-material-primary-colors">
 </a>
 
 > 📝 Referencia de colores disponibles:  
@@ -395,7 +395,15 @@ theme:
 
 ### 📚 Enlace a la documentación oficial
 
-👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/</a>
+🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/</a>
+
+---
+
+## 🖼️ 9. Imágenes
+
+🧷 [Donath, M. (s. f.). Images - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/reference/images/](https://squidfunk.github.io/mkdocs-material/reference/images/?h=images)
+
+🧷 [Blueswen. (s. f.). mkdocs-glightbox: A MkDocs plugin supports image lightbox (zoom effect) with GLightbox.Recuperado 22 de junio de 2025, de https://github.com/blueswen/mkdocs-glightbox#usage](https://github.com/blueswen/mkdocs-glightbox#usage)
 
 ---
 
@@ -425,8 +433,8 @@ nav:
 La **estructura completa del proyecto** actualmente se verá como sigue:
 
 <!-- ![Estructura del proyecto](assets/images/estructura_proyecto.png)   -->
-<a href="../assets/images/estructura_proyecto.png" target="_blank">
-  <img src="../assets/images/estructura_proyecto.png" alt="Estructura del proyecto">
+<a href="/assets/mkdocs_material/estructura_proyecto.png" target="_blank">
+  <img src="/assets/mkdocs_material/estructura_proyecto.png" alt="Estructura del proyecto">
 </a>
 
 ## 🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
@@ -502,8 +510,8 @@ Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la
 
 📷  
 <!-- ![Paso 1: Settings > Pages](assets\github_pages\activando_github_pages_1.png) -->
-<a href="../assets/github_pages/activando_github_pages_1.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_1.png" alt="Paso 1: Settings > Pages">
+<a href="/assets/github_pages/activando_github_pages_1.png" target="_blank">
+  <img src="/assets/github_pages/activando_github_pages_1.png" alt="Paso 1: Settings > Pages">
 </a>
 
 ---
@@ -512,8 +520,8 @@ Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la
 
 📷  
 <!-- ![Paso 2: Menú lateral Pages](assets\github_pages\activando_github_pages_2.png) -->
-<a href="../assets/github_pages/activando_github_pages_2.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_2.png" alt="Paso 2: Menú lateral Pages">
+<a href="/assets/github_pages/activando_github_pages_2.png" target="_blank">
+  <img src="/assets/github_pages/activando_github_pages_2.png" alt="Paso 2: Menú lateral Pages">
 </a>
 
 ---
@@ -522,8 +530,8 @@ Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la
 
 📷  
 <!-- ![Paso 3: Selección de rama y carpeta](assets\github_pages\activando_github_pages_3.png) -->
-<a href="../assets/github_pages/activando_github_pages_3.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_3.png" alt="Paso 3: Selección de rama y carpeta">
+<a href="/assets/github_pages/activando_github_pages_3.png" target="_blank">
+  <img src="/assets/github_pages/activando_github_pages_3.png" alt="Paso 3: Selección de rama y carpeta">
 </a>
 
 ---
@@ -532,8 +540,8 @@ Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la
 
 📷  
 <!-- ![Paso 4: Guardar configuración](assets\github_pages\activando_github_pages_4.png) -->
-<a href="../assets/github_pages/activando_github_pages_4.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_4.png" alt="Paso 4: Guardar configuración">
+<a href="/assets/github_pages/activando_github_pages_4.png" target="_blank">
+  <img src="/assets/github_pages/activando_github_pages_4.png" alt="Paso 4: Guardar configuración">
 </a>
 
 ---
@@ -546,8 +554,8 @@ GitHub Pages **no funciona en repositorios privados** a menos que tengamos una c
 
 📷  
 <!-- ![Paso 5: Danger Zone](assets\github_pages\activando_github_pages_5.png) -->
-<a href="../assets/github_pages/activando_github_pages_5.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_5.png" alt="Paso 5: Danger Zone">
+<a href="/assets/github_pages/activando_github_pages_5.png" target="_blank">
+  <img src="/assets/github_pages/activando_github_pages_5.png" alt="Paso 5: Danger Zone">
 </a>
 
 ---
@@ -556,8 +564,8 @@ GitHub Pages **no funciona en repositorios privados** a menos que tengamos una c
 
 📷  
 <!-- ![Paso 6: Confirmar cambio de visibilidad](assets\github_pages\activando_github_pages_6.png) -->
-<a href="../assets/github_pages/activando_github_pages_6.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_6.png" alt="Paso 6: Confirmar cambio de visibilidad">
+<a href="/assets/github_pages/activando_github_pages_6.png" target="_blank">
+  <img src="/assets/github_pages/activando_github_pages_6.png" alt="Paso 6: Confirmar cambio de visibilidad">
 </a>
 
 ---
@@ -566,10 +574,10 @@ GitHub Pages **no funciona en repositorios privados** a menos que tengamos una c
 
 📷  
 <!-- ![Paso 7: Confirmación final](assets\github_pages\activando_github_pages_7.png) -->
-<a href="../assets/github_pages/activando_github_pages_7.png" target="_blank">
-  <img src="../assets/github_pages/activando_github_pages_7.png" alt="Paso 7: Confirmación final">
+<a href="assets/github_pages/activando_github_pages_7.png" target="_blank">
+  <img src="assets/github_pages/activando_github_pages_7.png" alt="Paso 7: Confirmación final">
 </a>
-<!-- [![Paso 7: Confirmación final](assets/github_pages/activando_github_pages_7.png)](assets/github_pages/activando_github_pages_7.png){ target="_blank" } -->
+<!-- [![Paso 7: Confirmación final](/assets/github_pages/activando_github_pages_7.png)](/assets/github_pages/activando_github_pages_7.png){ target="_blank" } -->
 
 ---
 
