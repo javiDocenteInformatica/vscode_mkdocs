@@ -26,7 +26,7 @@ python3 --version
 ```
 
 Si no lo tenemos, podemos descargarlo desde la página oficial:  
-👉 <a href="https://www.python.org/downloads" target="_blank" rel="noopener">https://www.python.org/downloads</a>
+🧷 <a href="https://www.python.org/downloads" target="_blank" rel="noopener">https://www.python.org/downloads</a>
 
 > Durante la instalación, es importante **activar la opción**:  
 > ✅ "Add Python to PATH"
@@ -289,7 +289,7 @@ MkDocs permite personalizar el diseño de nuestro sitio si estamos utilizando el
 Podemos modificar los **colores**, el **favicon**, el **logo**, el **idioma** y más elementos visuales para adaptarlo a nuestras necesidades.
 
 > 📚 Documentación oficial del tema Material:  
-> 👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/</a>
+> 🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/</a>
 
 ---
 
@@ -309,13 +309,13 @@ theme:
 
 Colores disponibles: `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`.
 
-<!-- ![mkdocs-material-primary-colors](assets/images/mkdocs-material-primary-colors.png) -->
-<a href="/assets/mkdocs_material/mkdocs-material-primary-colors.png" target="_blank">
-  <img src="/assets/mkdocs_material/mkdocs-material-primary-colors.png" alt="mkdocs-material-primary-colors">
-</a>
+![mkdocs-material-primary-colors](../assets/mkdocs_material/mkdocs-material-primary-colors.png){ loading=lazy }
+///caption
+📷 mkdocs-material-primary-colors
+///
 
 > 📝 Referencia de colores disponibles:  
-> 👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors</a>
+> 🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-and-accent-colors</a>
 
 ---
 
@@ -330,7 +330,7 @@ theme:
 ```
 
 > 🌍 Lista de idiomas disponibles:  
-> 👉 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/</a>
+> 🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/" target="_blank" rel="noopener">https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/</a>
 
 ---
 
@@ -401,13 +401,29 @@ theme:
 
 ## 🖼️ 9. Imágenes
 
-🧷 [Donath, M. (s. f.). Images - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/reference/images/](https://squidfunk.github.io/mkdocs-material/reference/images/?h=images)
+🧷 <a href="https://squidfunk.github.io/mkdocs-material/reference/images/?h=images" target="_blank" rel="noopener">
+Donath, M. (s. f.). Images - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/reference/images/
+</a>
 
-🧷 [Blueswen. (s. f.). mkdocs-glightbox: A MkDocs plugin supports image lightbox (zoom effect) with GLightbox.Recuperado 22 de junio de 2025, de https://github.com/blueswen/mkdocs-glightbox#usage](https://github.com/blueswen/mkdocs-glightbox#usage)
+🧷 <a href="https://github.com/blueswen/mkdocs-glightbox#usage" target="_blank" rel="noopener">
+Blueswen. (s. f.). mkdocs-glightbox: A MkDocs plugin supports image lightbox (zoom effect) with GLightbox. Recuperado 22 de junio de 2025, de https://github.com/blueswen/mkdocs-glightbox#usage
+</a>
+
+🧷 <a href="https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#caption" target="_blank" rel="noopener">
+Donath, M. (s. f.). Python Markdown Extensions - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#caption
+</a>
+
+🧷 <a href="https://squidfunk.github.io/mkdocs-material/reference/images/#image-captions" target="_blank" rel="noopener">
+Donath, M. (s. f.). Images - Material for MkDocs. Github.io. Recuperado 22 de junio de 2025, de https://squidfunk.github.io/mkdocs-material/reference/images/#image-captions
+</a>
+
+🧷 <a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/" target="_blank" rel="noopener">
+Caption. (s. f.). Github.io. Recuperado 22 de junio de 2025, de https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/
+</a>
 
 ---
 
-## 📙 9. Contenido de `mkdocs.yml` y Estructura del Proyecto
+## 📙 10. Contenido de `mkdocs.yml` y Estructura del Proyecto
 
 El **contenido** final que tenemos actualmente en nuestro documento **de configuración `mkdocs.yml`**:  
 
@@ -432,12 +448,12 @@ nav:
 
 La **estructura completa del proyecto** actualmente se verá como sigue:
 
-<!-- ![Estructura del proyecto](assets/images/estructura_proyecto.png)   -->
-<a href="/assets/mkdocs_material/estructura_proyecto.png" target="_blank">
-  <img src="/assets/mkdocs_material/estructura_proyecto.png" alt="Estructura del proyecto">
-</a>
+![Estructura del proyecto](../assets/images/estructura_proyecto.png){ loading=lazy }
+///caption
+📷 Estructura del proyecto
+///
 
-## 🐱📃 10. subir el proyecto a GitHub Pages para hacerlo público
+## 🐱📃 11. subir el proyecto a GitHub Pages para hacerlo público
 
 🧷 *Repositorio publicado:*  
 <a href="https://javidocenteinformatica.github.io/vscode_mkdocs/" target="_blank" rel="noopener">
@@ -456,7 +472,7 @@ Para ello, utilizaremos **GitHub Pages**, un servicio gratuito que nos permite s
 
 ---
 
-### 10.1 Requisitos previos
+### 11.1 Requisitos previos
 
 Antes de continuar, asegúrate de haber cumplido los siguientes puntos:
 
@@ -476,7 +492,7 @@ Esto ayuda a MkDocs a generar correctamente los enlaces internos (por ejemplo, e
 
 ---
 
-### 10.2 Publicar la documentación en GitHub Pages
+### 11.2 Publicar la documentación en GitHub Pages
 
 Para publicar la documentación, simplemente debemos ejecutar el siguiente comando:
 
@@ -502,86 +518,83 @@ INFO    -  Your documentation should shortly be available at: https://<usuario>.
 
 ---
 
-### 10.3 Activar GitHub Pages desde la configuración del repositorio
+### 11.3 Activar GitHub Pages desde la configuración del repositorio
 
 Aun después de hacer el `gh-deploy`, es necesario activar GitHub Pages desde la interfaz web de GitHub. Vamos a ver cómo se hace paso a paso.
 
 #### Paso 1: Accedemos a la pestaña **Settings** del repositorio
 
-📷  
-<!-- ![Paso 1: Settings > Pages](assets\github_pages\activando_github_pages_1.png) -->
-<a href="/assets/github_pages/activando_github_pages_1.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_1.png" alt="Paso 1: Settings > Pages">
-</a>
+![Paso 1: Settings > Pages](../assets/github_pages/activando_github_pages_1.png){ loading=lazy }
+///caption
+📷 Paso 1: Settings > Pages
+///
 
 ---
 
 #### Paso 2: En el menú lateral, entramos en la opción **Pages**
 
-📷  
-<!-- ![Paso 2: Menú lateral Pages](assets\github_pages\activando_github_pages_2.png) -->
-<a href="/assets/github_pages/activando_github_pages_2.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_2.png" alt="Paso 2: Menú lateral Pages">
-</a>
+![Paso 2: Menú lateral Pages](../assets/github_pages/activando_github_pages_2.png){ loading=lazy }
+///caption
+📷 Paso 2: Menú lateral Pages
+///
 
 ---
 
 #### Paso 3: Elegimos la rama `gh-pages` y la carpeta `/ (root)` como fuente
 
-📷  
-<!-- ![Paso 3: Selección de rama y carpeta](assets\github_pages\activando_github_pages_3.png) -->
-<a href="/assets/github_pages/activando_github_pages_3.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_3.png" alt="Paso 3: Selección de rama y carpeta">
-</a>
+![Paso 3: Selección de rama y carpeta](../assets/github_pages/activando_github_pages_3.png){ loading=lazy }
+///caption
+📷 Paso 3: Selección de rama y carpeta
+///
 
 ---
 
 #### Paso 4: Hacemos clic en **Save** para aplicar los cambios  
 
-📷  
-<!-- ![Paso 4: Guardar configuración](assets\github_pages\activando_github_pages_4.png) -->
-<a href="/assets/github_pages/activando_github_pages_4.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_4.png" alt="Paso 4: Guardar configuración">
-</a>
+![Paso 4: Guardar configuración](../assets/github_pages/activando_github_pages_4.png){ loading=lazy }
+///caption
+📷 Paso 4: Guardar configuración
+///
 
 ---
 
-### 10.4 Hacer el repositorio público
+### 11.4 Hacer el repositorio público
 
 GitHub Pages **no funciona en repositorios privados** a menos que tengamos una cuenta GitHub Pro. Por tanto, si tu repositorio es privado, deberás cambiar su visibilidad a público.
 
 #### Paso 5: Entra en la sección **General** > baja hasta la **Danger Zone**
 
-📷  
-<!-- ![Paso 5: Danger Zone](assets\github_pages\activando_github_pages_5.png) -->
-<a href="/assets/github_pages/activando_github_pages_5.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_5.png" alt="Paso 5: Danger Zone">
-</a>
+![Paso 5: Danger Zone](../assets/github_pages/activando_github_pages_5.png){ loading=lazy }
+///caption
+📷 Paso 5: Danger Zone
+///
 
 ---
 
 #### Paso 6: Haz clic en **Change visibility** y selecciona **Change to public**
 
-📷  
-<!-- ![Paso 6: Confirmar cambio de visibilidad](assets\github_pages\activando_github_pages_6.png) -->
-<a href="/assets/github_pages/activando_github_pages_6.png" target="_blank">
-  <img src="/assets/github_pages/activando_github_pages_6.png" alt="Paso 6: Confirmar cambio de visibilidad">
-</a>
+![Paso 6: Confirmar cambio de visibilidad](../assets/github_pages/activando_github_pages_6.png){ loading=lazy }
+///caption
+📷 Paso 6: Confirmar cambio de visibilidad
+///
 
 ---
 
 #### Paso 7: Confirma los efectos y escribe el nombre del repositorio para validar
 
-📷  
-<!-- ![Paso 7: Confirmación final](assets\github_pages\activando_github_pages_7.png) -->
-<a href="assets/github_pages/activando_github_pages_7.png" target="_blank">
+![Paso 7: Confirmación final](../assets/github_pages/activando_github_pages_7.png){ loading=lazy }
+///caption
+📷 Paso 7: Confirmación final
+///
+
+<!-- <a href="assets/github_pages/activando_github_pages_7.png" target="_blank">
   <img src="assets/github_pages/activando_github_pages_7.png" alt="Paso 7: Confirmación final">
-</a>
-<!-- [![Paso 7: Confirmación final](/assets/github_pages/activando_github_pages_7.png)](/assets/github_pages/activando_github_pages_7.png){ target="_blank" } -->
+</a> -->
+<!-- [![Paso 7: Confirmación final](/assets/github_pages/activando_github_pages_7.png)](/assets/github_pages/activando_github_pages_7.png){ target="_blank" rel="noopener"} -->
 
 ---
 
-### 10.5 Acceder a la página pública
+### 11.5 Acceder a la página pública
 
 Después de guardar todos los cambios y esperar unos segundos, podrás acceder a tu documentación en la siguiente URL:
 
@@ -591,7 +604,7 @@ https://<usuario>.github.io/<repositorio>/
 
 En nuestro caso:
 
-👉 <a href="https://javidocenteinformatica.github.io/vscode_mkdocs/" target="_blank" rel="noopener">
+🧷 <a href="https://javidocenteinformatica.github.io/vscode_mkdocs/" target="_blank" rel="noopener">
 https://javidocenteinformatica.github.io/vscode_mkdocs/
 </a>
 

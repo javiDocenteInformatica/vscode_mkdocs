@@ -46,19 +46,23 @@ plugins:
       skip_classes:
         - custom-skip-class-name
       auto_themed: false
-      auto_caption: false
+      auto_caption: true
       caption_position: bottom
       background: white
       shadow: true
       manual: false
 
 ## Sólo funciona si eres insider. Esto te permitiría abrir enlaces en una nueva pestaña.
-# plugins:
-#   - privacy:
+# plugins: #https://squidfunk.github.io/mkdocs-material/plugins/privacy/?h=privacy
+#   - privacy: 
 #       links_attr_map:
 #         target: _blank
 #         rel: noopener noreferrer
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 
 nav:
